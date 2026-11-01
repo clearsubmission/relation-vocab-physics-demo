@@ -102,7 +102,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
     <div class="bars" id="bars"></div>
     <div class="row" style="margin-top:10px"><button id="reveal">Reveal answer</button></div>
     <div class="verdict" id="verdict"></div>
-    <div class="note">Bars: softmax over KARMA scores for the queried object's possible collision partners.
+    <div class="note">Bars: model scores for the queried object's possible collision partners, softmax-normalized for display (not calibrated probabilities).
     The small grid in each query shows the true partner's rank on each rung (1 = top).</div>
   </section>
 
@@ -162,8 +162,8 @@ function load(vid){
   $("fr").max=V.frames.length-1; $("tagnote").textContent=TAGS[V.tag]||"";
   renderQueries(); setFrame(cutFrame()); renderAll();
 }
-function cutFrame(){ const q=V.queries[Q]; const c=(q?q.cutoff_bin:V.cutoff_bin)??8;
-  return Math.min(V.frames.length-1, Math.floor(((c+1)*V.bin_size-1)/V.frame_step)); }
+function cutFrame(){ const c=V.cutoff_bin??8;
+  return Math.min(V.frames.length-1, Math.floor((c*V.bin_size-1)/V.frame_step)); }
 function setFrame(f){F=f; $("fr").value=f; draw()}
 function togglePlay(){ playing?stop():start() }
 function start(){ playing=true; $("play").textContent="Pause";
@@ -195,7 +195,7 @@ function renderForecast(){
     d.className="bar"+(revealed&&c===q.target?" truth":"");
     d.innerHTML=`<span class="lab">${objName(c)}${revealed&&c===q.target?" ✓":""}</span>
       <div class="track"><div class="fill" style="width:${(pr[i]*100).toFixed(1)}%"></div></div>
-      <span style="text-align:right;font-variant-numeric:tabular-nums">${(pr[i]*100).toFixed(0)}%</span>`;
+      <span style="text-align:right;font-variant-numeric:tabular-nums">${pr[i].toFixed(2)}</span>`;
     box.appendChild(d)});
   $("reveal").textContent=revealed?"Hide answer":"Reveal answer";
   if(revealed){ const r=p.rank; $("verdict").innerHTML = r<=1
@@ -209,7 +209,7 @@ function renderFacts(){
   const keys=V.rungs.map(r=>r.key), ri=keys.indexOf(R), prev=ri>0?keys[ri-1]:null;
   const key=f=>f.slice(0,4).join("|");
   const prevSet=new Set(prev?(V.facts[prev]||[]).map(key):[]);
-  const hist=(V.facts[R]||[]).filter(f=>f[4]==="history"&&f[3]<=q.cutoff_bin);
+  const hist=(V.facts[R]||[]).filter(f=>f[4]==="history"&&f[3]<(V.cutoff_bin??8));
   const sel=new Set([String(q.subject),...q.preds[R].cands.map(String)]);
   const groups={};
   hist.forEach(f=>{ if(!showA&&f[1].startsWith("has_")) return;
