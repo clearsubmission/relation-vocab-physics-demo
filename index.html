@@ -89,7 +89,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
     <canvas id="cv" width="760" height="520"></canvas>
     <div class="scrub"><input type="range" id="fr" min="0" max="127" value="0" aria-label="Frame"><div class="cutmark" id="cut"></div></div>
     <div class="legend">
-      <span>solid = in camera view</span><span>dashed = out of view (facts carried by the graph)</span>
+      <span>solid = in camera view</span><span>dashed = out of view (no new facts recorded while unseen)</span>
       <span>arrow = velocity</span><span style="color:var(--bad)">red line = forecast cutoff</span>
     </div>
   </section>
@@ -124,7 +124,7 @@ const TAGS = {
   vocabulary_helps:"Vocabulary helps: richer relations move the true partner to the top.",
   long_horizon:"Long horizon: collisions far after the cutoff, where the long look-ahead rung matters.",
   failure:"Failure case: even the richest vocabulary misses here. Look for what pairwise facts cannot express.",
-  occlusion:"Object permanence: a queried object is out of camera view before the cutoff, yet its facts persist in the graph."
+  occlusion:"Object permanence: a queried object is out of view before the cutoff. Facts recorded while it was visible stay in the history; nothing new is recorded while it is unseen."
 };
 const RUNGC = {events:"--r-events",kin:"--r-kin",rel:"--r-rel",rel128:"--r-rel128"};
 const COLORS = {gray:"#8e8e8e",red:"#d0473a",blue:"#3b6fd1",green:"#3f9e4d",brown:"#8a5a35",purple:"#8a4fb7",cyan:"#2fb3c4",yellow:"#e0b52b"};
