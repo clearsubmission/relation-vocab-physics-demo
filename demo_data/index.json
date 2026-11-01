@@ -1,0 +1,466 @@
+{
+ "rungs": [
+  "events",
+  "kin",
+  "rel",
+  "rel128"
+ ],
+ "videos": [
+  {
+   "video": "6473",
+   "tag": "vocabulary_helps",
+   "n_queries": 2,
+   "rank_top": [
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    5.0,
+    5.0
+   ]
+  },
+  {
+   "video": "5874",
+   "tag": "vocabulary_helps",
+   "n_queries": 4,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    2.0
+   ],
+   "rank_bottom": [
+    3.0,
+    2.0,
+    3.0,
+    4.0
+   ]
+  },
+  {
+   "video": "14589",
+   "tag": "vocabulary_helps",
+   "n_queries": 4,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    3.0,
+    2.0,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "video": "3",
+   "tag": "vocabulary_helps",
+   "n_queries": 4,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    3.0,
+    1.0,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "video": "3059",
+   "tag": "vocabulary_helps",
+   "n_queries": 2,
+   "rank_top": [
+    2.0,
+    2.0
+   ],
+   "rank_bottom": [
+    5.0,
+    5.0
+   ]
+  },
+  {
+   "video": "10403",
+   "tag": "vocabulary_helps",
+   "n_queries": 4,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    2.0
+   ],
+   "rank_bottom": [
+    3.0,
+    2.0,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "video": "8857",
+   "tag": "long_horizon",
+   "n_queries": 8,
+   "rank_top": [
+    1.0,
+    1.0,
+    2.0,
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0
+   ],
+   "rank_bottom": [
+    3.0,
+    3.0,
+    3.0,
+    2.0,
+    2.0,
+    2.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "video": "13946",
+   "tag": "long_horizon",
+   "n_queries": 4,
+   "rank_top": [
+    2.0,
+    2.0,
+    3.0,
+    3.0
+   ],
+   "rank_bottom": [
+    1.0,
+    3.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "video": "13835",
+   "tag": "long_horizon",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    2.0,
+    1.0
+   ],
+   "rank_bottom": [
+    2.0,
+    2.0,
+    1.0,
+    1.0,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "video": "13275",
+   "tag": "long_horizon",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    2.0,
+    2.0
+   ],
+   "rank_bottom": [
+    2.0,
+    1.0,
+    1.0,
+    3.0,
+    1.0,
+    2.0
+   ]
+  },
+  {
+   "video": "2729",
+   "tag": "long_horizon",
+   "n_queries": 4,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    1.0,
+    1.0,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "video": "1945",
+   "tag": "long_horizon",
+   "n_queries": 4,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    1.0,
+    2.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "video": "13018",
+   "tag": "failure",
+   "n_queries": 6,
+   "rank_top": [
+    2.0,
+    2.0,
+    4.0,
+    3.0,
+    4.0,
+    3.0
+   ],
+   "rank_bottom": [
+    3.0,
+    3.0,
+    4.0,
+    2.0,
+    4.0,
+    2.0
+   ]
+  },
+  {
+   "video": "5042",
+   "tag": "failure",
+   "n_queries": 6,
+   "rank_top": [
+    2.0,
+    1.0,
+    1.0,
+    2.0,
+    3.0,
+    3.0
+   ],
+   "rank_bottom": [
+    1.0,
+    4.0,
+    1.0,
+    3.0,
+    1.0,
+    2.0
+   ]
+  },
+  {
+   "video": "5522",
+   "tag": "failure",
+   "n_queries": 4,
+   "rank_top": [
+    2.0,
+    2.0,
+    3.0,
+    2.0
+   ],
+   "rank_bottom": [
+    2.0,
+    1.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "video": "2086",
+   "tag": "failure",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    3.0
+   ],
+   "rank_bottom": [
+    1.0,
+    1.0,
+    2.0,
+    3.0,
+    2.0,
+    2.0
+   ]
+  },
+  {
+   "video": "13479",
+   "tag": "failure",
+   "n_queries": 4,
+   "rank_top": [
+    4.0,
+    3.0,
+    3.0,
+    2.0
+   ],
+   "rank_bottom": [
+    1.0,
+    4.0,
+    1.0,
+    2.0
+   ]
+  },
+  {
+   "video": "3450",
+   "tag": "failure",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    3.0
+   ],
+   "rank_bottom": [
+    1.0,
+    1.0,
+    2.0,
+    1.0,
+    2.0,
+    3.0
+   ]
+  },
+  {
+   "video": "11139",
+   "tag": "occlusion",
+   "n_queries": 6,
+   "rank_top": [
+    2.0,
+    2.0,
+    1.0,
+    3.0,
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    3.0,
+    1.0,
+    2.0,
+    4.0,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "video": "1387",
+   "tag": "occlusion",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    2.0,
+    2.0,
+    1.0,
+    1.0
+   ],
+   "rank_bottom": [
+    1.0,
+    2.0,
+    2.0,
+    3.0,
+    2.0,
+    2.0
+   ]
+  },
+  {
+   "video": "11573",
+   "tag": "occlusion",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    2.0,
+    1.0,
+    2.0,
+    1.0
+   ],
+   "rank_bottom": [
+    2.0,
+    2.0,
+    3.0,
+    1.0,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "video": "6973",
+   "tag": "occlusion",
+   "n_queries": 6,
+   "rank_top": [
+    2.0,
+    1.0,
+    1.0,
+    1.0,
+    2.0,
+    2.0
+   ],
+   "rank_bottom": [
+    2.0,
+    2.0,
+    2.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "video": "9023",
+   "tag": "occlusion",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    3.0,
+    2.0
+   ],
+   "rank_bottom": [
+    4.0,
+    3.0,
+    1.0,
+    1.0,
+    3.0,
+    2.0
+   ]
+  },
+  {
+   "video": "1349",
+   "tag": "occlusion",
+   "n_queries": 6,
+   "rank_top": [
+    1.0,
+    1.0,
+    1.0,
+    2.0,
+    2.0,
+    1.0
+   ],
+   "rank_bottom": [
+    2.0,
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    1.0
+   ]
+  }
+ ]
+}
